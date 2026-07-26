@@ -29,6 +29,10 @@ export const metadata: Metadata = {
     "vegetarian thali",
     "catering vadodara",
   ],
+  icons: {
+    icon: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgqt7dBybbMWsg5x8v5w4ucTFhBmFrWDLQB0zE141UMowVNTjam3jaKJztefCPHqvya14W2HTCqtNFCeuusmPlfolYPqYDp5fVjhGRlAzodK-r5493Eidayik6W8gZcjc9ZovJjG8T9Zl5-p10ORN3OaxJd9D9Jfhejnw4jfuBf71foT5AMdUdW4S8I0gcidwM_Yr55FLGCG3AxulNZgfAgCrqWzEKdHuONJpJkAhHhfzfNbPlaeAoMQJokMCFvnwqztb0NdKU839f",
+    apple: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgqt7dBybbMWsg5x8v5w4ucTFhBmFrWDLQB0zE141UMowVNTjam3jaKJztefCPHqvya14W2HTCqtNFCeuusmPlfolYPqYDp5fVjhGRlAzodK-r5493Eidayik6W8gZcjc9ZovJjG8T9Zl5-p10ORN3OaxJd9D9Jfhejnw4jfuBf71foT5AMdUdW4S8I0gcidwM_Yr55FLGCG3AxulNZgfAgCrqWzEKdHuONJpJkAhHhfzfNbPlaeAoMQJokMCFvnwqztb0NdKU839f",
+  },
 };
 
 export default function RootLayout({

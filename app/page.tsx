@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import ContactForm from "./components/ContactForm";
 import ServiceCard from "./components/ServiceCard";
 import { Icon } from "./components/Icon";
+import ImageSlideshow from "./components/ImageSlideshow";
 
 /* ────────────────── SECTION LABEL ────────────────── */
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -342,15 +343,9 @@ export default function Page() {
         />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <div className="founder-grid">
-            {/* Kitchen image */}
+            {/* Kitchen image – slideshow */}
             <div className="founder-image-wrap">
-              <Image
-                src="https://images.unsplash.com/photo-1556910103-1c02745a872e?auto=format&fit=crop&q=80&w=1200"
-                alt="Elegant home-style Indian kitchen with fresh vegetables and traditional spices"
-                fill
-                style={{ objectFit: "cover" }}
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+              <ImageSlideshow />
               <div className="founder-img-overlay" />
               <div className="founder-quote-wrap">
                 <div className="founder-quote-box">
