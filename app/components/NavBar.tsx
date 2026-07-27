@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -53,9 +54,7 @@ export default function NavBar() {
             textDecoration: "none",
           }}
         >
-          <span className="material-symbols-outlined" style={{ fontSize: "28px", fontVariationSettings: "'FILL' 1" }}>
-            directions_boat
-          </span>
+          <Image src="/logo.svg" alt="Food Kashti logo" width={36} height={36} />
           Food Kashti
         </Link>
 
