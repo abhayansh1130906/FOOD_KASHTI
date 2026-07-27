@@ -54,7 +54,7 @@ export default function NavBar() {
             textDecoration: "none",
           }}
         >
-          <Image src="/logo.svg" alt="Food Kashti logo" width={36} height={36} />
+          <Image src="/logo.svg" alt="Food Kashti logo" width={44} height={44} />
           Food Kashti
         </Link>
 

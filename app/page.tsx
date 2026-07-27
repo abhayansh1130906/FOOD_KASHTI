@@ -149,10 +149,10 @@ export default function Page() {
                 }}
               />
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgqt7dBybbMWsg5x8v5w4ucTFhBmFrWDLQB0zE141UMowVNTjam3jaKJztefCPHqvya14W2HTCqtNFCeuusmPlfolYPqYDp5fVjhGRlAzodK-r5493Eidayik6W8gZcjc9ZovJjG8T9Zl5-p10ORN3OaxJd9D9Jfhejnw4jfuBf71foT5AMdUdW4S8I0gcidwM_Yr55FLGCG3AxulNZgfAgCrqWzEKdHuONJpJkAhHhfzfNbPlaeAoMQJokMCFvnwqztb0NdKU839f"
+                src="/logo.svg"
                 alt="Food Kashti brand logo – a boat sailing with warm homemade food"
-                width={560}
-                height={560}
+                width={680}
+                height={680}
                 priority
                 className="hero-logo-img"
                 style={{ objectFit: "contain", maxWidth: "100%", height: "auto" }}
@@ -547,7 +547,7 @@ export default function Page() {
         <div className="footer-inner">
           <div className="footer-brand">
             <span className="footer-logo">
-              <Icon name="directions_boat" size={24} fill />
+              <Image src="/logo.svg" alt="Food Kashti logo" width={32} height={32} />
               Food Kashti
             </span>
             <p className="footer-copy">

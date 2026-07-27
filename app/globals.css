@@ -282,12 +282,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 480px;
 }
 
 .hero-logo-img {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
   filter: drop-shadow(0 24px 40px rgba(193, 89, 0, 0.2));
   transition: transform 0.7s ease-in-out;
 }
