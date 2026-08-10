@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Food Kashti</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#0a2000",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "on-tertiary-fixed": "#001d36",
+                        "primary": "#984300",
+                        "surface-bright": "#fef8f6",
+                        "inverse-primary": "#ffb68e",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#0078c9",
+                        "earth-black": "#1D1B1A",
+                        "surface-container-low": "#f9f2f0",
+                        "inverse-on-surface": "#f6efed",
+                        "on-surface-variant": "#574238",
+                        "on-primary-fixed": "#331200",
+                        "on-tertiary-fixed-variant": "#00497d",
+                        "surface-variant": "#e7e1df",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#f3edea",
+                        "outline": "#8a7266",
+                        "hearth-orange": "#C65C0D",
+                        "on-secondary-container": "#406e20",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#005fa0",
+                        "outline-variant": "#dec1b3",
+                        "secondary": "#3c691c",
+                        "surface-dim": "#dfd9d7",
+                        "primary-fixed": "#ffdbca",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#773300",
+                        "inverse-surface": "#32302f",
+                        "surface": "#fef8f6",
+                        "sprout-green": "#B9EF91",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e7e1df",
+                        "on-tertiary-container": "#fdfcff",
+                        "primary-fixed-dim": "#ffb68e",
+                        "background": "#fef8f6",
+                        "secondary-fixed-dim": "#a1d57a",
+                        "on-secondary-fixed-variant": "#255103",
+                        "on-background": "#1d1b1a",
+                        "surface-tint": "#9c4500",
+                        "secondary-fixed": "#bcf294",
+                        "secondary-container": "#b9ef91",
+                        "tertiary-fixed": "#d1e4ff",
+                        "on-surface": "#1d1b1a",
+                        "tertiary-fixed-dim": "#9fcaff",
+                        "cream-shell": "#FCF9F4",
+                        "primary-container": "#be5604",
+                        "surface-container-high": "#ede7e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Literata"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Literata"],
+                        "headline-md": ["Literata"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Literata"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.cream-shell');
+            color: theme('colors.earth-black');
+        }
+    </style>
+</head>
+<body class="antialiased font-body-md text-body-md bg-cream-shell text-earth-black selection:bg-sprout-green selection:text-earth-black">
+<!-- TopNavBar -->
+<nav class="bg-cream-shell dark:bg-earth-black full-width top-0 w-full z-50 sticky transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight" href="#">Food Kashti</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-label-lg font-label-lg text-on-surface dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors" href="#">Home</a>
+<a class="text-label-lg font-label-lg text-on-surface dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors" href="#">Pricing</a>
+<a aria-current="page" class="text-label-lg font-label-lg text-hearth-orange dark:text-hearth-orange font-bold border-b-2 border-hearth-orange pb-1 scale-95 transition-transform" href="#">About Us</a>
+<a class="text-label-lg font-label-lg text-on-surface dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors" href="#">Work with Us</a>
+<a class="text-label-lg font-label-lg text-on-surface dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:inline-flex bg-transparent border-2 border-hearth-orange text-hearth-orange hover:bg-surface-container-low transition-colors px-6 py-2 rounded-full text-label-lg font-label-lg">Sign Up / Login</button>
+<button aria-label="Menu" class="md:hidden text-earth-black">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-24">
+<!-- Hero Section -->
+<section class="py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center min-h-[716px]">
+<div class="flex flex-col gap-6 max-w-xl">
+<h1 class="text-display-lg font-display-lg text-primary tracking-tight leading-tight">Tastes like Home, Delivered with Heart.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                    At Food Kashti, we bridge the gap between the rustic comfort of a family kitchen and the seamless efficiency of a modern delivery service. We believe that a home-cooked meal is more than sustenance; it's vitality, comfort, and care wrapped in a warm package.
+                </p>
+<div class="pt-4">
+<button class="bg-hearth-orange text-white hover:bg-primary transition-colors px-8 py-4 rounded-full text-label-lg font-label-lg shadow-sm hover:shadow-md flex items-center gap-2 group">
+                        Discover Our Menu
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative h-[400px] md:h-[600px] w-full rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30">
+<img alt="Chef cooking" class="object-cover w-full h-full absolute inset-0" data-alt="A high-quality, brightly lit photograph of a warm, inviting modern rustic kitchen. A skilled home chef is joyfully preparing a vibrant, healthy meal with fresh vegetables and herbs on a wooden cutting board. The lighting is soft and natural, emphasizing the 'Home-Cooked Vitality' theme. The aesthetic is modern organic with clean lines and warm earthy tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr-mIQ5yIHpDA5iGTNAZWzvc6dsrI87gL-yLDXtpGW6lPNLxbo5ksD9I5t3JlKlp0z-nmS6Ab_9vGXrmE_eQnvlVU4kHuwbxlXwqqBIj1LAaHqHbzRN4i_5M5rPG8qMjf4QSDPT_kjgnlN0KeifL5hJdg_hFSwAhvWjFvQaPxRpL31rR1O2P528XiPMYuyBSlrNj4AZWxGNedjHb9tGGtrI7i9P_-EKSWSPJ21P6fskEpp7NGxRubW2g"/>
+<div class="absolute bottom-6 left-6 right-6 bg-surface-container-lowest/90 backdrop-blur-md p-6 rounded-xl border border-outline-variant/20 shadow-md">
+<div class="flex items-center gap-4">
+<div class="bg-sprout-green/20 p-3 rounded-full text-secondary">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+</div>
+<div>
+<p class="text-label-lg font-label-lg text-earth-black">Locally Sourced Ingredients</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Fresh from farm to your plate</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story / Mission Bento Grid -->
+<section class="py-16 md:py-24">
+<div class="text-center mb-12 md:mb-16">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Our Story &amp; Mission</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">From humble beginnings in a single kitchen to a community of passionate home chefs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Story 1 -->
+<div class="md:col-span-2 bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-outline-variant/20 flex flex-col justify-end relative overflow-hidden group hover:border-hearth-orange/50 transition-colors">
+<div class="absolute inset-0 w-full h-full z-0 opacity-80 mix-blend-multiply bg-surface-container-low transition-opacity group-hover:opacity-100">
+<img alt="Meal" class="object-cover w-full h-full" data-alt="A close-up, beautifully styled shot of a traditional Indian meal served in modern, minimalist ceramic bowls on a light wooden table. The warm, inviting colors of the curries and rice pop against the neutral background. Natural sunlight streams across the table, creating soft ambient shadows. The mood is nurturing and appetizing, capturing the essence of a home-cooked family dinner." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRZSra2eD6U58pvyJJ4IpUyB5y7SUiDS3JPvhPaah6-8aqdFinXWiU-3osATRJALpR82K3LjsAaDRNDfTihT0jeJc_l3IceccYcdrxR91_33HjGIUhvJczCmZrwYp5u3pkeiazwM-rTfwKxudaFkGrdIDncfTc6TkCyURRPhfoR9GFfaAY6OuSmP97oku6CWobNUGPIF7LyIde_eQcHvn8F9Gs4p8DwdzdwXIP1Ss9i885pO0Xdg9yeg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-earth-black/80 via-earth-black/40 to-transparent z-10"></div>
+<div class="relative z-20">
+<span class="inline-block px-3 py-1 bg-sprout-green text-earth-black text-label-sm font-label-sm rounded-full mb-4">The Origin</span>
+<h3 class="text-headline-md font-headline-md text-white mb-2">Born from a craving for home.</h3>
+<p class="text-body-md font-body-md text-white/90 line-clamp-2">It started when a group of busy professionals realized they missed the simple, comforting taste of their mothers' cooking.</p>
+</div>
+</div>
+<!-- Story 2 -->
+<div class="bg-surface-container rounded-2xl p-8 flex flex-col justify-between shadow-sm border border-outline-variant/20 hover:-translate-y-1 transition-transform">
+<div class="bg-white/50 w-12 h-12 rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-earth-black mb-3">Empowering Chefs</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">We partner with local, passionate home cooks, giving them a platform to share their cherished family recipes and culinary heritage with the community.</p>
+</div>
+</div>
+<!-- Story 3 -->
+<div class="bg-primary text-white rounded-2xl p-8 flex flex-col justify-between shadow-sm border border-primary-container relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[120px]" data-icon="local_dining" style="font-variation-settings: 'FILL' 1;">local_dining</span>
+</div>
+<div class="relative z-10">
+<h3 class="text-headline-lg font-headline-lg mb-4">10k+</h3>
+<p class="text-body-lg font-body-lg text-primary-fixed">Meals delivered with love, preserving the authentic taste of home cooking while supporting local culinary talent.</p>
+</div>
+</div>
+<!-- Story 4 -->
+<div class="md:col-span-2 bg-white rounded-2xl p-8 shadow-sm border border-outline-variant/20 flex gap-6 items-center hover:shadow-md transition-shadow">
+<div class="w-1/3 h-full rounded-xl overflow-hidden hidden md:block">
+<img alt="Ingredients" class="object-cover w-full h-full" data-alt="A bright, minimalist composition showing fresh, locally sourced raw ingredients neatly arranged on a clean, light-colored kitchen counter. Includes vibrant green leafy vegetables, ripe red tomatoes, and fresh herbs. Soft, high-diffusion shadows suggest they are resting gently. The aesthetic is clean, modern, and emphasizes the 'Fresh Ingredients' standard of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0kHsuoIQwYh4LQZXT7YSr-l3EBLf2gpPrkBrUcSI5v2tu36QGY7PQYv9_7Lj0pLGP7KRRssrbhejPbLHZJcrWxoMKCHrq8STlNsnTnzveLSzQipwRHcKSbOKJnTGiByXUwo048ZGcPr-LQlKEqA0INO2DCKv39xaBCxsDgDn83tJaVjTwqV57mYZQUo3AElCR5J7QfSWH7TnQA5XUTf-2MAsd2dUS2Rk3Qw7rswAo2o1LQnYbuDAmsA"/>
+</div>
+<div class="flex-1">
+<span class="inline-block px-3 py-1 bg-surface-container text-on-surface-variant text-label-sm font-label-sm rounded-full mb-4">Our Commitment</span>
+<h3 class="text-headline-md font-headline-md text-earth-black mb-3">Transparent &amp; Zestful</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">We believe in complete transparency about what goes into your food. No hidden preservatives, just wholesome, fresh ingredients prepared daily in hygienic environments.</p>
+<a class="text-hearth-orange font-label-lg text-label-lg hover:underline flex items-center gap-1 w-max" href="#">
+                            Read our sourcing policy
+                            <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quality Standards -->
+<section class="py-16 md:py-24 bg-surface-bright rounded-3xl p-8 md:p-16 border border-outline-variant/30 my-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-sprout-green/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-80 h-80 bg-hearth-orange/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+<div class="relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Our Quality Standards</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">Every meal that leaves a Food Kashti kitchen adheres to our strict guidelines for freshness, taste, and hygiene.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Standard 1 -->
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/20 hover:border-hearth-orange transition-colors">
+<div class="w-16 h-16 bg-sprout-green/20 rounded-full flex items-center justify-center text-secondary mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl" data-icon="health_and_safety" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-earth-black mb-3">Hygiene Verified</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">All our home kitchens undergo rigorous and regular hygiene audits to ensure your food is prepared in a safe, clean environment.</p>
+</div>
+<!-- Standard 2 -->
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/20 hover:border-hearth-orange transition-colors">
+<div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center text-hearth-orange mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl" data-icon="soup_kitchen" style="font-variation-settings: 'FILL' 1;">soup_kitchen</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-earth-black mb-3">Home-Cooked Care</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Meals are cooked in small batches, ensuring the authentic taste, texture, and nutritional value of a true home-cooked meal.</p>
+</div>
+<!-- Standard 3 -->
+<div class="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-sm border border-outline-variant/20 hover:border-hearth-orange transition-colors">
+<div class="w-16 h-16 bg-sprout-green/20 rounded-full flex items-center justify-center text-secondary mb-6 shadow-sm">
+<span class="material-symbols-outlined text-3xl" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-earth-black mb-3">Fresh Ingredients</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">We strictly prohibit artificial preservatives. We prioritize seasonal, locally sourced produce to bring you the freshest zestful flavors.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface border-t border-outline-variant dark:border-outline full-width mt-auto transition-all duration-300">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="flex flex-col gap-4">
+<a class="text-headline-md font-headline-md text-primary dark:text-inverse-primary font-bold" href="#">Food Kashti</a>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant max-w-sm">
+                    Bringing the soul of home-cooked meals to your doorstep.
+                </p>
+<div class="flex gap-4 mt-2">
+<a aria-label="Facebook" class="text-on-surface-variant hover:text-hearth-orange transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="facebook">qr_code_2</span>
+</a>
+<a aria-label="Instagram" class="text-on-surface-variant hover:text-hearth-orange transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="camera_alt">camera_alt</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-label-lg font-label-lg text-primary dark:text-inverse-primary mb-2">Company</h4>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors w-max" href="#">Home</a>
+<a aria-current="page" class="text-body-md font-body-md text-hearth-orange underline w-max" href="#">About Us</a>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors w-max" href="#">Pricing</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-label-lg font-label-lg text-primary dark:text-inverse-primary mb-2">Legal &amp; Support</h4>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors w-max" href="#">Privacy Policy</a>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors w-max" href="#">Terms of Service</a>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange transition-colors w-max" href="#">Contact Us</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 dark:border-outline/30">
+<div class="px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto text-center md:text-left">
+<p class="text-label-sm font-label-sm text-on-surface-variant dark:text-surface-variant">© 2024 Food Kashti. All rights reserved. Tastes like Home.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple nav scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm', 'bg-white/90', 'backdrop-blur-md');
+                nav.classList.remove('bg-cream-shell');
+            } else {
+                nav.classList.remove('shadow-sm', 'bg-white/90', 'backdrop-blur-md');
+                nav.classList.add('bg-cream-shell');
+            }
+        });
+    </script>
+</body></html>

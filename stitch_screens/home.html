@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Food Kashti - Home-Cooked Meals Delivered</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#0a2000",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "on-tertiary-fixed": "#001d36",
+                        "primary": "#984300",
+                        "surface-bright": "#fef8f6",
+                        "inverse-primary": "#ffb68e",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#0078c9",
+                        "earth-black": "#1D1B1A",
+                        "surface-container-low": "#f9f2f0",
+                        "inverse-on-surface": "#f6efed",
+                        "on-surface-variant": "#574238",
+                        "on-primary-fixed": "#331200",
+                        "on-tertiary-fixed-variant": "#00497d",
+                        "surface-variant": "#e7e1df",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#f3edea",
+                        "outline": "#8a7266",
+                        "hearth-orange": "#C65C0D",
+                        "on-secondary-container": "#406e20",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#005fa0",
+                        "outline-variant": "#dec1b3",
+                        "secondary": "#3c691c",
+                        "surface-dim": "#dfd9d7",
+                        "primary-fixed": "#ffdbca",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#773300",
+                        "inverse-surface": "#32302f",
+                        "surface": "#fef8f6",
+                        "sprout-green": "#B9EF91",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e7e1df",
+                        "on-tertiary-container": "#fdfcff",
+                        "primary-fixed-dim": "#ffb68e",
+                        "background": "#fef8f6",
+                        "secondary-fixed-dim": "#a1d57a",
+                        "on-secondary-fixed-variant": "#255103",
+                        "on-background": "#1d1b1a",
+                        "surface-tint": "#9c4500",
+                        "secondary-fixed": "#bcf294",
+                        "secondary-container": "#b9ef91",
+                        "tertiary-fixed": "#d1e4ff",
+                        "on-surface": "#1d1b1a",
+                        "tertiary-fixed-dim": "#9fcaff",
+                        "cream-shell": "#FCF9F4",
+                        "primary-container": "#be5604",
+                        "surface-container-high": "#ede7e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Literata", "serif"],
+                        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg": ["Literata", "serif"],
+                        "headline-md": ["Literata", "serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Literata", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blob-shape {
+            border-radius: 41% 59% 47% 53% / 41% 44% 56% 59%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full bg-cream-shell sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand Logo -->
+<div class="flex items-center gap-2">
+<img alt="Food Kashti Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbnzLT9AIp-LXpg7jSM_LHLRbJOMb3VcKZDva2fu-XvGFMCjOxfRNLXpTfvRLZyAKNUxCPihMlGFpRFTcQkhf0MlCW5Wx59odsJyaqDUTs0JjELaaPaFe31Yj5cN5jgMmfkHf3PLQHGmHQtXQ0DfrJmwudmAB-3yD2fAmBvCn_KsfSDWx4qigQhY9-Yt0_PYFPHTn8fB-W2C5RBGeIxDVNVd8ZIiHWtLx8b6lrdOcX9CaVkF0XFfF-2Cc6qtPXpHSn_Xo"/>
+<span class="text-headline-md font-headline-md font-bold text-primary">Food Kashti</span>
+</div>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-label-lg font-label-lg text-hearth-orange font-bold border-b-2 border-hearth-orange pb-1 hover:text-hearth-orange transition-colors" href="#">Home</a>
+<a class="text-label-lg font-label-lg text-on-surface hover:text-hearth-orange transition-colors" href="#">Pricing</a>
+<a class="text-label-lg font-label-lg text-on-surface hover:text-hearth-orange transition-colors" href="#">About Us</a>
+<a class="text-label-lg font-label-lg text-on-surface hover:text-hearth-orange transition-colors" href="#">Work with Us</a>
+<a class="text-label-lg font-label-lg text-on-surface hover:text-hearth-orange transition-colors" href="#">Contact</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:flex">
+<button class="border-2 border-hearth-orange text-hearth-orange font-label-lg text-label-lg px-6 py-2 rounded-full hover:bg-hearth-orange hover:text-white transition-colors">Sign Up / Login</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Text Content -->
+<div class="flex flex-col gap-6 z-10">
+<h1 class="text-display-lg font-display-lg text-on-background">
+<span class="text-hearth-orange">Fresh, Home-Cooked<br/>Meals</span><br/>
+<span class="text-on-tertiary-fixed-variant">Delivered to Your Door</span>
+</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
+                    Our talented home chefs prepare delicious meals made with locally-sourced ingredients, so you can enjoy home style food in the comfort of your own home.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center mt-4">
+<button class="bg-hearth-orange text-white font-label-lg text-label-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto">
+                        Order Now
+                    </button>
+<div class="flex items-center gap-3 text-on-tertiary-fixed-variant">
+<div class="bg-tertiary-container text-white p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">phone</span>
+</div>
+<span class="text-headline-md font-headline-md font-bold">+91 800 8984 800</span>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="relative z-10 flex justify-center items-center mt-12 md:mt-0">
+<!-- Decorative background blob -->
+<div class="absolute inset-0 bg-primary blob-shape scale-110 -z-10 translate-x-4 translate-y-4"></div>
+<!-- Main Image -->
+<div class="relative w-full max-w-md aspect-square">
+<img alt="A delicious, warm, home-cooked Indian curry meal with steaming white rice, presented in a black ceramic bowl resting on a modern rustic kitchen surface. Bright, inviting lighting highlights the rich textures and colors, emphasizing the 'home-cooked vitality' aesthetic." class="w-full h-full object-cover rounded-full shadow-2xl border-4 border-white" src="https://lh3.googleusercontent.com/aida/AP1WRLvxPYMcMd6Wzf1EhQscV0_SSS4LVkdq1KnGD53QKXxXHqBbCGO28uyuAykrMrVbl9-5gcVR6l2VnBMckDzT1RTRP160hOTWQscC70uNHHsa1qJ-9OAsckelqke9poq8C9YSJD685NLFSrtLLuITmh-JAMbyhVYO-2qjKjj_n-pfIJZBXaXQN4Y63rzUUK5uQSv3E-bOfGOMH3cPbGphyRkf7ApHdxFa5KmyM7i72G5-sHxEuNKVjYuS-po" style="border-radius: 48% 52% 43% 57% / 51% 47% 53% 49%;"/>
+<!-- Floating elements for dynamic feel -->
+<img class="absolute -top-4 -left-4 w-16 h-16 object-cover rounded-full shadow-md z-20" data-alt="A sliced red onion ring floating near a meal bowl, well-lit, fresh ingredient, modern minimalist organic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvWSz1ybY_kIlZccJgAydzDddRG8m_I7DnJuthQr_xLoQd8ytYZjZfejUc0Lb5Jms3Av-vFS-YXQ9mGVRuP8HbP0DKhqu7dtqnMEyBw-jPRVcC0nF3EIHPWwhPZv22HE9CPw4sjfmNZCNokZJBHXQ7ptQhoOhmM2HeW-2UF0JpamabZ0gUMia9g1KpXUWVxuxBWnQc1IHpdgjZdE2AbS4tV8NaxST2lJP5_osIWomtucGkFA6RmhbPxw"/>
+<img class="absolute -bottom-8 left-4 w-20 h-20 object-cover rounded-full shadow-md z-20" data-alt="Two halves of a fresh, bright red cherry tomato resting near a bowl of curry, emphasizing fresh locally-sourced ingredients in a clean, bright setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpr2LOKqJRFbv7uvM5uQreez_CNgneRhduIAJa2rS0WaRgV5u9rFnFgC0sRuRedDWA7LnZbNzj8ZSeswGGPRiN0Ql2gxYwYyM48EPhoKsV0YOViwwcscQCY16RHp91_DTOFqZ3fmthQ2e1My1kOx6W7oQHdJMJ6HrmS1a76B4y6W-KSzKaOiC10zpLEjTHGOcbzJToqgf0OBtnNUhhkueT16Wkpin5BORb0CP9gvuj7i_q3cSL2ZhUaA"/>
+<img class="absolute -bottom-4 right-8 w-16 h-16 object-cover z-20" data-alt="A fresh sprig of bright green basil or mint leaves, adding a pop of color and freshness, placed gracefully near the food." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuH3bxWXPXqq6cZxjmROyNcnYdeOuv9zJkafKjEonE20u4i9laaVmLr3bCYv4jfzYTbkQ5DUiQ7KozR3BwDPDHUuRE2WIMZob7ffGLwOHoxaro7I_fc2-VYmScOlciaJsGVcSYebDFLPos4ITxnYkBp5inCibMgIlRx9hcjFwAlgFJYxprceX3l4cOZYGavmh74wc3Wcae3D7urbznk-lWJqbAUVbcoHscAQ7NlcKzdbLHIXaoMIEg4A"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (Bento Grid) -->
+<section class="w-full bg-surface-container py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-4">Why Choose Food Kashti?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">Experience the warmth of home in every bite, prepared with care and delivered with convenience.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Bento Item 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(29,27,26,0.08)] flex flex-col items-start gap-4">
+<div class="w-12 h-12 bg-sprout-green rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-2xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-background">Authentic Home Recipes</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Prepared by local home chefs using recipes passed down through generations, ensuring genuine flavor.</p>
+</div>
+<!-- Bento Item 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(29,27,26,0.08)] flex flex-col items-start gap-4">
+<div class="w-12 h-12 bg-sprout-green rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-2xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-background">Fresh Ingredients</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">We source locally to ensure every meal is made with the freshest seasonal produce available.</p>
+</div>
+<!-- Bento Item 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(29,27,26,0.08)] flex flex-col items-start gap-4">
+<div class="w-12 h-12 bg-sprout-green rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-2xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-background">Reliable Delivery</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Your warm meals are packed securely and delivered to your doorstep right when you need them.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-surface-container dark:bg-inverse-surface border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-12 max-w-container-max mx-auto text-body-md font-body-md">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<span class="text-headline-md font-headline-md text-primary dark:text-inverse-primary">Food Kashti</span>
+<p class="text-on-surface-variant dark:text-surface-variant max-w-xs">Tastes like Home. Delivering the soul of a home-cooked meal without the labor.</p>
+<div class="text-label-sm font-label-sm text-on-surface-variant mt-4">
+                    © 2024 Food Kashti. All rights reserved.
+                </div>
+</div>
+<!-- Links Column -->
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange Transition-all duration-300" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange Transition-all duration-300" href="#">Pricing</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange Transition-all duration-300" href="#">Contact Us</a>
+</div>
+<!-- Legal Column -->
+<div class="flex flex-col gap-3">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange Transition-all duration-300" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-hearth-orange dark:hover:text-hearth-orange Transition-all duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

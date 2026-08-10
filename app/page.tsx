@@ -1,570 +1,153 @@
 import Image from "next/image";
-import Link from "next/link";
-import NavBar from "./components/NavBar";
-import ContactForm from "./components/ContactForm";
-import ServiceCard from "./components/ServiceCard";
-import { Icon } from "./components/Icon";
-import ImageSlideshow from "./components/ImageSlideshow";
 
-/* ────────────────── SECTION LABEL ────────────────── */
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <span
-      style={{
-        fontFamily: "var(--font-plus-jakarta), sans-serif",
-        fontSize: "12px",
-        fontWeight: 500,
-        color: "var(--color-primary)",
-        textTransform: "uppercase",
-        letterSpacing: "0.1em",
-        display: "block",
-        marginBottom: "8px",
-      }}
-    >
-      {children}
-    </span>
-  );
-}
-
-/* ────────────────── PAGE ────────────────── */
-export default function Page() {
+export default function Home() {
   return (
     <>
-      <NavBar />
-
-      {/* ──────────────── HERO ──────────────── */}
-      <header
-        id="hero"
-        style={{
-          position: "relative",
-          paddingTop: "140px",
-          paddingBottom: "80px",
-          background: "var(--color-surface-bright)",
-          overflow: "hidden",
-        }}
-      >
-        {/* Ambient glow blobs */}
-        <div
-          aria-hidden
-          style={{
-            position: "absolute",
-            top: "-80px",
-            right: "-80px",
-            width: "600px",
-            height: "600px",
-            borderRadius: "50%",
-            background: "var(--color-primary-fixed-dim)",
-            opacity: 0.18,
-            filter: "blur(80px)",
-            pointerEvents: "none",
-          }}
-        />
-        <div
-          aria-hidden
-          style={{
-            position: "absolute",
-            bottom: "-60px",
-            left: "-60px",
-            width: "400px",
-            height: "400px",
-            borderRadius: "50%",
-            background: "var(--color-secondary-container)",
-            opacity: 0.15,
-            filter: "blur(60px)",
-            pointerEvents: "none",
-          }}
-        />
-
-        <div
-          style={{
-            maxWidth: "1280px",
-            margin: "0 auto",
-            padding: "0 24px",
-            position: "relative",
-            zIndex: 1,
-          }}
-        >
-          <div className="hero-grid">
-            {/* Left text */}
-            <div className="hero-text">
-              {/* Veg badge */}
-              <span className="veg-badge">
-                <Icon name="eco" size={16} />
-                100% Pure Vegetarian
+      {/* Hero Section */}
+      <section className="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="flex flex-col gap-6 z-10">
+            <h1 className="text-display-lg font-display-lg text-on-background">
+              <span className="text-hearth-orange">
+                Fresh, Home-Cooked
+                <br />
+                Meals
               </span>
-
-              <h1 className="hero-h1">
-                Sailing the{" "}
-                <em style={{ color: "var(--color-primary)", fontStyle: "italic" }}>
-                  Joy
-                </em>{" "}
-                of Homemade Food
-              </h1>
-
-              <p className="hero-desc">
-                Fresh, authentic thalis delivered directly to your train seat or
-                home in Vadodara. Experience the warmth of a home kitchen on
-                your journey.
-              </p>
-
-              {/* CTA Buttons */}
-              <div className="hero-ctas">
-                <Link href="#contact-form" className="btn-primary">
-                  <Icon name="train" size={20} />
-                  Book Your Train Meal
-                </Link>
-                <Link href="#services" className="btn-outline">
-                  <Icon name="restaurant_menu" size={20} />
-                  Explore Menu
-                </Link>
-              </div>
-
-              {/* Trust stats */}
-              <div className="hero-stats">
-                {[
-                  { value: "500+", label: "Happy Customers" },
-                  { value: "3+", label: "Years Serving" },
-                  { value: "100%", label: "Veg Kitchen" },
-                ].map((s) => (
-                  <div key={s.label} style={{ textAlign: "center" }}>
-                    <div className="stat-value">{s.value}</div>
-                    <div className="stat-label">{s.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right – Logo image */}
-            <div className="hero-image-wrap">
-              <div
-                aria-hidden
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background: "var(--color-primary-fixed-dim)",
-                  borderRadius: "50%",
-                  filter: "blur(80px)",
-                  opacity: 0.3,
-                  transform: "scale(0.8)",
-                }}
-              />
-              <Image
-                src="/logo.svg"
-                alt="Food Kashti brand logo – a boat sailing with warm homemade food"
-                width={680}
-                height={680}
-                priority
-                className="hero-logo-img"
-                style={{ objectFit: "contain", maxWidth: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Wave divider */}
-        <div
-          aria-hidden
-          className="wave-divider"
-          style={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: "80px",
-            transform: "rotate(180deg)",
-          }}
-        />
-      </header>
-
-      {/* ──────────────── SERVICES ──────────────── */}
-      <section id="services" className="section-surface">
-        <div className="container">
-          <div className="section-header">
-            <SectionLabel>What We Offer</SectionLabel>
-            <h2 className="section-title">Our Services</h2>
-            <p className="section-desc">
-              Navigating through different needs, we bring the comfort of home
-              wherever you are.
+              <br />
+              <span className="text-on-tertiary-fixed-variant">
+                Delivered to Your Door
+              </span>
+            </h1>
+            <p className="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
+              Our talented home chefs prepare delicious meals made with
+              locally-sourced ingredients, so you can enjoy home style food in
+              the comfort of your own home.
             </p>
-          </div>
-
-          <div className="services-grid">
-            {[
-              {
-                icon: "train",
-                color: "var(--color-primary-container)",
-                iconColor: "var(--color-on-primary-container)",
-                hoverBg: "var(--color-primary)",
-                hoverIcon: "var(--color-on-primary)",
-                title: "Train Food Delivery",
-                desc: "Pre-order your favourite thali. We deliver piping hot, fresh meals directly to your seat at Vadodara railway station.",
-                link: "Learn more",
-              },
-              {
-                icon: "home_work",
-                color: "var(--color-secondary-container)",
-                iconColor: "var(--color-on-secondary-container)",
-                hoverBg: "var(--color-secondary)",
-                hoverIcon: "var(--color-on-secondary)",
-                title: "Local Delivery",
-                desc: "Daily home-style meals delivered across Vadodara. Perfect for working professionals craving the taste of home.",
-                link: "View menu",
-              },
-              {
-                icon: "celebration",
-                color: "var(--color-tertiary-fixed-dim)",
-                iconColor: "var(--color-on-tertiary-container)",
-                hoverBg: "var(--color-tertiary)",
-                hoverIcon: "var(--color-on-tertiary)",
-                title: "Catering Services",
-                desc: "Customized pure vegetarian menus for small to medium gatherings. Crafted with care and served with joy.",
-                link: "Get a quote",
-              },
-            ].map((s) => (
-              <ServiceCard key={s.title} {...s} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ──────────────── STORY (BENTO GRID) ──────────────── */}
-      <section id="story" className="section-container-low">
-        <div className="container">
-          <div className="bento-grid">
-            {/* Story Card */}
-            <div className="bento-story card-base">
-              <div style={{ position: "relative", zIndex: 1 }}>
-                <SectionLabel>The Journey</SectionLabel>
-                <h2 className="bento-title">
-                  The Story Behind the Kashti
-                </h2>
-                <p className="body-text">
-                  Food Kashti was born out of a simple observation by Shilpi
-                  Jain: the struggle to find reliable, hygienic, and home-like
-                  food while traveling by train. What started as a mission to
-                  serve passengers at Vadodara station has sailed into a beloved
-                  local kitchen delivering comfort to homes and journeys alike.
-                </p>
-              </div>
-              {/* Decorative sailing icon */}
-              <div
-                aria-hidden
-                style={{
-                  position: "absolute",
-                  bottom: "-40px",
-                  right: "-40px",
-                  opacity: 0.04,
-                }}
-              >
-                <span
-                  className="material-symbols-outlined"
-                  style={{
-                    fontSize: "280px",
-                    lineHeight: 1,
-                    fontVariationSettings: "'FILL' 1",
-                  }}
-                >
-                  sailing
+            <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center mt-4">
+              <button className="bg-hearth-orange text-white font-label-lg text-label-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto">
+                Order Now
+              </button>
+              <div className="flex items-center gap-3 text-on-tertiary-fixed-variant">
+                <div className="bg-tertiary-container text-white p-2 rounded-full flex items-center justify-center">
+                  <span
+                    className="material-symbols-outlined"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    phone
+                  </span>
+                </div>
+                <span className="text-headline-md font-headline-md font-bold">
+                  +91 800 8984 800
                 </span>
               </div>
             </div>
-
-            {/* Purity card */}
-            <div className="bento-value-primary">
-              <Icon name="water_drop" size={40} />
-              <h4 className="value-title">Purity</h4>
-              <p className="value-desc">
-                100% vegetarian kitchen ensuring the highest hygiene standards.
-              </p>
-            </div>
-
-            {/* Simplicity card */}
-            <div className="bento-value-secondary">
-              <Icon name="spa" size={40} />
-              <h4 className="value-title">Simplicity</h4>
-              <p className="value-desc">
-                Honest ingredients, home-style recipes without excessive spices.
-              </p>
-            </div>
-
-            {/* Flexibility + Consistency */}
-            <div className="bento-values-row card-base">
-              {[
-                {
-                  icon: "sync_alt",
-                  title: "Flexibility",
-                  desc: "Customizable options to meet dietary needs, including Jain preparations.",
-                  bordered: false,
-                },
-                {
-                  icon: "verified",
-                  title: "Consistency",
-                  desc: "The same comforting taste and quality, order after order.",
-                  bordered: true,
-                },
-              ].map((v) => (
-                <div
-                  key={v.title}
-                  className={v.bordered ? "value-item value-item--bordered" : "value-item"}
-                >
-                  <div className="value-icon-wrap">
-                    <Icon name={v.icon} size={20} />
-                  </div>
-                  <div>
-                    <h4 className="value-item-title">{v.title}</h4>
-                    <p className="value-item-desc">{v.desc}</p>
-                  </div>
-                </div>
-              ))}
+          </div>
+          {/* Hero Image */}
+          <div className="relative z-10 flex justify-center items-center mt-12 md:mt-0">
+            {/* Decorative background blob */}
+            <div className="absolute inset-0 bg-primary blob-shape scale-110 -z-10 translate-x-4 translate-y-4"></div>
+            {/* Main Image */}
+            <div className="relative w-full max-w-md aspect-square">
+              <img
+                alt="A delicious, warm, home-cooked Indian curry meal"
+                className="w-full h-full object-cover rounded-full shadow-2xl border-4 border-white"
+                src="https://lh3.googleusercontent.com/aida/AP1WRLvxPYMcMd6Wzf1EhQscV0_SSS4LVkdq1KnGD53QKXxXHqBbCGO28uyuAykrMrVbl9-5gcVR6l2VnBMckDzT1RTRP160hOTWQscC70uNHHsa1qJ-9OAsckelqke9poq8C9YSJD685NLFSrtLLuITmh-JAMbyhVYO-2qjKjj_n-pfIJZBXaXQN4Y63rzUUK5uQSv3E-bOfGOMH3cPbGphyRkf7ApHdxFa5KmyM7i72G5-sHxEuNKVjYuS-po"
+                style={{
+                  borderRadius: "48% 52% 43% 57% / 51% 47% 53% 49%",
+                }}
+              />
+              {/* Floating elements for dynamic feel */}
+              <img
+                alt="A sliced red onion ring floating"
+                className="absolute -top-4 -left-4 w-16 h-16 object-cover rounded-full shadow-md z-20"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvWSz1ybY_kIlZccJgAydzDddRG8m_I7DnJuthQr_xLoQd8ytYZjZfejUc0Lb5Jms3Av-vFS-YXQ9mGVRuP8HbP0DKhqu7dtqnMEyBw-jPRVcC0nF3EIHPWwhPZv22HE9CPw4sjfmNZCNokZJBHXQ7ptQhoOhmM2HeW-2UF0JpamabZ0gUMia9g1KpXUWVxuxBWnQc1IHpdgjZdE2AbS4tV8NaxST2lJP5_osIWomtucGkFA6RmhbPxw"
+              />
+              <img
+                alt="Two halves of a fresh cherry tomato"
+                className="absolute -bottom-8 left-4 w-20 h-20 object-cover rounded-full shadow-md z-20"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpr2LOKqJRFbv7uvM5uQreez_CNgneRhduIAJa2rS0WaRgV5u9rFnFgC0sRuRedDWA7LnZbNzj8ZSeswGGPRiN0Ql2gxYwYyM48EPhoKsV0YOViwwcscQCY16RHp91_DTOFqZ3fmthQ2e1My1kOx6W7oQHdJMJ6HrmS1a76B4y6W-KSzKaOiC10zpLEjTHGOcbzJToqgf0OBtnNUhhkueT16Wkpin5BORb0CP9gvuj7i_q3cSL2ZhUaA"
+              />
+              <img
+                alt="A fresh sprig of bright green basil"
+                className="absolute -bottom-4 right-8 w-16 h-16 object-cover z-20"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuH3bxWXPXqq6cZxjmROyNcnYdeOuv9zJkafKjEonE20u4i9laaVmLr3bCYv4jfzYTbkQ5DUiQ7KozR3BwDPDHUuRE2WIMZob7ffGLwOHoxaro7I_fc2-VYmScOlciaJsGVcSYebDFLPos4ITxnYkBp5inCibMgIlRx9hcjFwAlgFJYxprceX3l4cOZYGavmh74wc3Wcae3D7urbznk-lWJqbAUVbcoHscAQ7NlcKzdbLHIXaoMIEg4A"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ──────────────── FOUNDER / WHY CHOOSE US ──────────────── */}
-      <section
-        id="founder"
-        className="section-surface"
-        style={{ position: "relative", overflow: "hidden" }}
-      >
-        {/* Background panel */}
-        <div
-          aria-hidden
-          style={{
-            position: "absolute",
-            top: 0,
-            right: 0,
-            width: "45%",
-            height: "100%",
-            background: "var(--color-surface-container-lowest)",
-            borderRadius: "100px 0 0 100px",
-            opacity: 0.5,
-          }}
-        />
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
-          <div className="founder-grid">
-            {/* Kitchen image – slideshow */}
-            <div className="founder-image-wrap">
-              <ImageSlideshow />
-              <div className="founder-img-overlay" />
-              <div className="founder-quote-wrap">
-                <div className="founder-quote-box">
-                  <p className="founder-quote-text">
-                    &ldquo;Cooking is not just a process; it&rsquo;s a way of
-                    serving love.&rdquo;
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Founder info */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
-              <div>
-                <SectionLabel>Meet The Founder</SectionLabel>
-                <h2 className="founder-name">Shilpi Jain</h2>
-                <p className="body-text">
-                  With a hands-on approach and a deep connection to traditional
-                  cooking, Shilpi oversees every aspect of Food Kashti. She
-                  believes that the best meals are crafted in a home-style
-                  environment, far removed from the cold efficiency of industrial
-                  kitchens.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="why-choose-title">Why Choose Us?</h3>
-                <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                  {[
-                    {
-                      icon: "soup_kitchen",
-                      bg: "rgba(244,121,32,0.12)",
-                      color: "var(--color-primary)",
-                      title: "Home-Style Kitchen",
-                      desc: "Not an industrial setup. We cook in small batches to maintain authenticity and freshness.",
-                    },
-                    {
-                      icon: "favorite",
-                      bg: "rgba(185,239,145,0.35)",
-                      color: "var(--color-secondary)",
-                      title: "Personalized Care",
-                      desc: "Every order is treated like a guest in our home, packaged with attention to detail.",
-                    },
-                    {
-                      icon: "savings",
-                      bg: "rgba(197,145,107,0.25)",
-                      color: "var(--color-tertiary)",
-                      title: "Affordable Pricing",
-                      desc: "Premium quality, hygienic food that remains accessible for daily consumption.",
-                    },
-                  ].map((item) => (
-                    <div
-                      key={item.title}
-                      style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}
-                    >
-                      <div
-                        style={{
-                          padding: "10px",
-                          background: item.bg,
-                          borderRadius: "9999px",
-                          flexShrink: 0,
-                          marginTop: "2px",
-                        }}
-                      >
-                        <span
-                          className="material-symbols-outlined"
-                          style={{ fontSize: "20px", color: item.color, display: "block", lineHeight: 1 }}
-                        >
-                          {item.icon}
-                        </span>
-                      </div>
-                      <div>
-                        <h4 className="why-item-title">{item.title}</h4>
-                        <p className="why-item-desc">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ──────────────── CTA BANNER ──────────────── */}
-      <section
-        id="contact"
-        style={{
-          padding: "80px 0",
-          background: "var(--color-primary)",
-          color: "var(--color-on-primary)",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
-        <div
-          aria-hidden
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage:
-              "radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)",
-            backgroundSize: "32px 32px",
-          }}
-        />
-        <div
-          style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            padding: "0 24px",
-            textAlign: "center",
-            position: "relative",
-            zIndex: 1,
-          }}
-        >
-          <Icon name="location_on" size={64} fill />
-          <h2 className="cta-title">Rooted in Vadodara</h2>
-          <p className="cta-desc">
-            Proudly serving our local community and travelers passing through.
-            Ready to experience the comfort of a home-cooked meal?
-          </p>
-          <div className="cta-btns">
-            <a href="tel:+919799100651" className="cta-btn-primary">
-              <Icon name="call" size={20} />
-              Call 9799100651
-            </a>
-            <a
-              href="https://wa.me/919799100651"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn-outline"
-            >
-              <Icon name="chat" size={20} />
-              Order via WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ──────────────── CONTACT FORM ──────────────── */}
-      <section id="contact-form" className="section-container-low">
-        <div className="container">
-          <div className="contact-grid">
-            {/* Contact info */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "0", justifyContent: "center" }}>
-              <SectionLabel>Reach Out to Us</SectionLabel>
-              <h2 className="contact-title">Get in Touch</h2>
-              <p className="body-text" style={{ marginBottom: "40px" }}>
-                Whether you have a question about catering, want to give
-                feedback, or have general inquiries — we&apos;re here to help.
-              </p>
-
-              <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-                {[
-                  { icon: "call", label: "Phone", value: "9799100651", href: "tel:+919799100651" },
-                  {
-                    icon: "mail",
-                    label: "Email",
-                    value: "reachout.foodkashti@gmail.com",
-                    href: "mailto:reachout.foodkashti@gmail.com",
-                  },
-                  { icon: "location_on", label: "Location", value: "Vadodara, Gujarat", href: null },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    style={{ display: "flex", alignItems: "center", gap: "16px" }}
-                  >
-                    <div className="contact-icon-wrap">
-                      <span
-                        className="material-symbols-outlined"
-                        style={{ fontSize: "22px", color: "var(--color-primary)" }}
-                      >
-                        {item.icon}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="contact-info-label">{item.label}</p>
-                      {item.href ? (
-                        <a href={item.href} className="contact-info-value-link">
-                          {item.value}
-                        </a>
-                      ) : (
-                        <p className="contact-info-value">{item.value}</p>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Form */}
-            <ContactForm />
-          </div>
-        </div>
-      </section>
-
-      {/* ──────────────── FOOTER ──────────────── */}
-      <footer className="footer">
-        <div className="footer-inner">
-          <div className="footer-brand">
-            <span className="footer-logo">
-              <Image src="/logo.svg" alt="Food Kashti logo" width={32} height={32} />
-              Food Kashti
-            </span>
-            <p className="footer-copy">
-              © 2024 Food Kashti. Based in Vadodara. Sailing the Joy of Food.
+      {/* Why Choose Us (Bento Grid) */}
+      <section className="w-full bg-surface-container py-24">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="text-center mb-16">
+            <h2 className="text-headline-lg font-headline-lg text-primary mb-4">
+              Why Choose Food Kashti?
+            </h2>
+            <p className="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+              Experience the warmth of home in every bite, prepared with care
+              and delivered with convenience.
             </p>
           </div>
-          <div className="footer-links">
-            {["Privacy Policy", "Terms of Service", "Contact Us", "Track Order"].map(
-              (item) => (
-                <a key={item} href="#" className="footer-link">
-                  {item}
-                </a>
-              )
-            )}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            {/* Bento Item 1 */}
+            <div className="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(29,27,26,0.08)] flex flex-col items-start gap-4">
+              <div className="w-12 h-12 bg-sprout-green rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+                <span
+                  className="material-symbols-outlined text-2xl"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  restaurant
+                </span>
+              </div>
+              <h3 className="text-headline-md font-headline-md text-on-background">
+                Authentic Home Recipes
+              </h3>
+              <p className="text-body-md font-body-md text-on-surface-variant">
+                Prepared by local home chefs using recipes passed down through
+                generations, ensuring genuine flavor.
+              </p>
+            </div>
+            {/* Bento Item 2 */}
+            <div className="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(29,27,26,0.08)] flex flex-col items-start gap-4">
+              <div className="w-12 h-12 bg-sprout-green rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+                <span
+                  className="material-symbols-outlined text-2xl"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  eco
+                </span>
+              </div>
+              <h3 className="text-headline-md font-headline-md text-on-background">
+                Fresh Ingredients
+              </h3>
+              <p className="text-body-md font-body-md text-on-surface-variant">
+                We source locally to ensure every meal is made with the
+                freshest seasonal produce available.
+              </p>
+            </div>
+            {/* Bento Item 3 */}
+            <div className="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_24px_rgba(29,27,26,0.08)] flex flex-col items-start gap-4">
+              <div className="w-12 h-12 bg-sprout-green rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+                <span
+                  className="material-symbols-outlined text-2xl"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  local_shipping
+                </span>
+              </div>
+              <h3 className="text-headline-md font-headline-md text-on-background">
+                Reliable Delivery
+              </h3>
+              <p className="text-body-md font-body-md text-on-surface-variant">
+                Your warm meals are packed securely and delivered to your
+                doorstep right when you need them.
+              </p>
+            </div>
           </div>
         </div>
-      </footer>
+      </section>
     </>
   );
 }

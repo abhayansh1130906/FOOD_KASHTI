@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Literata, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import TopNavBar from "@/components/TopNavBar";
+import Footer from "@/components/Footer";
 
 const literata = Literata({
   subsets: ["latin"],
@@ -63,7 +65,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased overflow-x-hidden">
+        <TopNavBar />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
